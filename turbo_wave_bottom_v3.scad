@@ -1,6 +1,83 @@
 union () {
   translate ([80, 0, 0]) {
     rotate (a=25, v=[0, 0, 1]) {
+        union () {
+            linear_extrude (height=6, center=true){
+              projection (cut = true) {
+                  translate ([-31, 6, 0]) {
+                      rotate ([0, 0, 1]) {
+                          cube([78, 60, 1], center = true);
+                      }
+                  }
+                  translate ([-29, 37, 0]) {
+                      rotate ([0, 0, 1]) {
+                          cube([42, 2, 1], center = true);
+                      }
+                  }
+                  translate ([-24, 39, 0]) {
+                      rotate ([0, 0, 1]) {
+                          cube([15, 2, 1], center = true);
+                      }
+                  }
+                  translate ([5, 25, 0]) {
+                      rotate ([0, 0, 22]) {
+                          cube([15, 20, 1], center = true);
+                      }
+                  }
+                  translate ([7, 23, 0]) {
+                      cube([10, 10, 1], center = true);
+                  }
+                  translate ([13, 20, 0]) {
+                      cube([35, 10, 1], center = true);
+                  }
+                  translate ([31, 21, 0]) {
+                      rotate ([0, 0, 42]) {
+                          cube([5, 10, 1], center = true);
+                      }
+                  }
+                  translate ([20, -12, 0]) {
+                      cube([28, 66, 1], center = true);
+                  }
+                  translate ([31, -46, 0]) {
+                      rotate ([0, 0, -42]) {
+                          cube([5, 10, 1], center = true);
+                      }
+                  }
+                  translate ([25, -48, 0]) {
+                      cube([11, 6, 1], center = true);
+                  }
+                  translate ([0, -55, 0]) {
+                      cube([26, 6, 1], center = true);
+                  }
+                  translate ([-25, -40, 0]) {
+                      cube([90, 25, 1], center = true);
+                  }
+                  translate ([-43, -45, 0]) {
+                      cube([60, 25, 1], center = true);
+                  }
+                  translate ([-30, -54, 0]) {
+                      rotate ([0, 0, 7]) {
+                          cube([19, 10, 1], center = true);
+                      }
+                  }
+                  translate ([-29.9, -54, 0]) {
+                      rotate ([0, 0, 7]) {
+                          cube([20, 10, 1], center = true);
+                      }
+                  }
+                  translate ([-76, -58, 0]) {
+                      rotate ([0, 0, -45]) {
+                          cube([20, 10, 1], center = true);
+                      }
+                  }
+                  translate ([-64, -59, 0]) {
+                      rotate ([0, 0, -55]) {
+                          cube([10, 20, 1], center = true);
+                      }
+                  }
+              }
+            }
+        }
       difference () {
         linear_extrude (height=3, center=true){
           projection (cut = true) {
