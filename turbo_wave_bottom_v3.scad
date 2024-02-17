@@ -65,6 +65,11 @@ union () {
                           cube([20, 10, 1], center = true);
                       }
                   }
+                  translate ([-58, -57, 0]) {
+                      rotate ([0, 0, 20]) {
+                          cube([20, 10, 1], center = true);
+                      }
+                  }
                   translate ([-76, -58, 0]) {
                       rotate ([0, 0, -45]) {
                           cube([20, 10, 1], center = true);
@@ -13060,6 +13065,11 @@ union () {
                   }
                   translate ([-29.9, -54, 0]) {
                       rotate ([0, 0, 7]) {
+                          cube([20, 10, 1], center = true);
+                      }
+                  }
+                  translate ([-58, -57, 0]) {
+                      rotate ([0, 0, 20]) {
                           cube([20, 10, 1], center = true);
                       }
                   }
