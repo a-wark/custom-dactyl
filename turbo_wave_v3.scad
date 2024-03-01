@@ -79,6 +79,24 @@ difference () {
             cube ([1.5, 2, 2], true);
         }
     }
+    translate ([-35.75, -62, 31]) {
+        rotate ([125, 0, 15]) {
+            rotate ([0, 0, -12]) {
+                linear_extrude(10) {
+                    polygon([[0, 0], [3, 0], [0, 3]]);
+                }
+            }
+        }
+    }
+    translate ([35.75, -62, 31]) {
+        rotate ([125, 0, -15]) {
+            rotate ([0, 0, 12]) {
+                linear_extrude(10) {
+                    polygon([[0, 0], [-3, 0], [0, 3]]);
+                }
+            }
+        }
+    }
 union () {
   translate ([80, 0, 0]) {
     rotate (a=25, v=[0, 0, 1]) {
